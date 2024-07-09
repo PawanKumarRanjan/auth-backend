@@ -17,7 +17,7 @@ const corsOptions = {
 
 app.use(bodyParser.json());
 app.use(cors(corsOptions));
-app.use('/api', AuthRouter);
+app.use('/auth', AuthRouter);
 app.use('/dashboard', DashboardRouter);
 
 app.listen(PORT, () => {
