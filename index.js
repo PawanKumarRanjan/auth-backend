@@ -9,7 +9,7 @@ require('./Models/db');
 const PORT = process.env.PORT || 8080;
 
 const corsOptions = {
-    origin: 'https://deploy-auth-frontend.vercel.app',
+    origin: '*',
     optionsSuccessStatus: 200,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: 'Content-Type,Authorization'
