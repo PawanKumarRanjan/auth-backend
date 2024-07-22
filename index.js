@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use('/auth', AuthRouter);
 app.use('/dashboard', DashboardRouter);
 
-app.get('/login', (req, res) => {
+app.get('/', (req, res) => {
     res.send("hello");
 });
 
