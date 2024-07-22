@@ -20,14 +20,14 @@ app.get('/login', (req, res) => {
     res.send("hello");
 });
 
-app.post('/signup', signupValidation, signup);
+// app.post('/signup', signupValidation, signup);
 
-app.get('/' ,ensureAuthenticated, (req, res) => {
-    console.log('--- logged in user detail ---');
-    res.status(200).json({
-        message: "hello user"
-    });
-});
+// app.get('/' ,ensureAuthenticated, (req, res) => {
+//     console.log('--- logged in user detail ---');
+//     res.status(200).json({
+//         message: "hello user"
+//     });
+// });
 
 app.listen(PORT, () => {
     console.log(`Server is running on ${PORT}`);
