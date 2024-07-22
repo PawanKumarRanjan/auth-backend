@@ -4,9 +4,9 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const AuthRouter = require('./Routes/authRouter');
 const DashboardRouter = require('./Routes/dashboardRouter')
-const { signupValidation, loginValidation } = require('../Middlewares/authValidation');
-const { signup, login } = require('../Controllers/authController');
-const ensureAuthenticated = require('../Middlewares/auth');
+const { signupValidation, loginValidation } = require('./Middlewares/authValidation');
+const { signup, login } = require('./Controllers/authController');
+const ensureAuthenticated = require('./Middlewares/auth');
 require('dotenv').config()
 require('./Models/db');
 const PORT = process.env.PORT || 8080;
