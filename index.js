@@ -11,9 +11,7 @@ require('dotenv').config()
 require('./Models/db');
 const PORT = process.env.PORT || 8080;
 
-const corsOptions = {()};
-
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(bodyParser.json());
 app.use('/auth', AuthRouter);
 app.use('/dashboard', DashboardRouter);
